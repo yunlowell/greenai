@@ -48,11 +48,17 @@ curl -i http://localhost/static/index.html
 
 ***
 
-## 3) 배포 환경 (AWS Lightsail)
+## 3) 배포 환경 및 배포 방법 (AWS Lightsail)
 - **인스턴스**: Ubuntu 22.04  
 - **도메인**: `http://greenai.p-e.kr`
 - **방화벽 규칙**: 포트 80 허용  
 - **도메인 설정**: A 레코드 → Static IP
+
+- Lightsail에서 Ubuntu 22.04 인스턴스 생성
+- Static IP를 인스턴스에 할당
+- 서버에 Docker 설치 후, 저장소에서 이미지를 빌드하거나 deploy.sh 같은 배포 스크립트 실행
+- 도메인 DNS 설정에서 A 레코드를 Lightsail Static IP로 연결
+- 도메인으로 접속해 서비스 정상 작동 확인
 
 ***
 
