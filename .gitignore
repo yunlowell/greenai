@@ -76,5 +76,7 @@ $RECYCLE.BIN/
 *.lnk
 
 .env
+*.tar
+!scripts
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,visualstudiocode,venv
